@@ -1,0 +1,82 @@
+EVEN OR ODD:
+n=int(input("enter a number: " ))
+if n%2==0:
+    print("even")
+else:
+    print("odd")
+
+OUTPUT:
+enter a number: 4
+even
+
+LEAP YEAR:
+y=int(input("enter year: "))
+if (y%4==0 and y%100!=0) or (y%400==0):
+    print("leap year")
+else:
+    print("not leap year")
+
+OUTPUT:
+enter year: 2000
+leap year
+
+5 TABLE:
+for i in range(1,11):
+    print("5x", i, "=", 5*i)
+
+OUTPUT:
+5x 1 = 5
+5x 2 = 10
+5x 3 = 15
+5x 4 = 20
+5x 5 = 25
+5x 6 = 30
+5x 7 = 35
+5x 8 = 40
+5x 9 = 45
+5x 10 = 50
+
+LCM AND HCF BY USING FUNCTIONS:
+import math
+s=4
+l=6
+print(math.gcd(s,l))
+print(math.lcm(s,l))
+
+OUTPUT:
+2
+12
+
+HCF:
+n1=12
+n2=18
+
+small = min(n1, n2)
+
+for i in range(1,small+1):
+    if n1 % i ==0 and n2 % i ==0:
+        hcf = i 
+        
+print(hcf)
+
+OUTPUT:
+6
+
+LCM:
+num1 = int(input())
+num2 = int(input())
+start = max(num1, num2)
+end = num1 * num2
+for i in range(start, end + 1):
+    if i % num1 == 0 and i % num2 == 0:
+        lcm = i
+        break  
+
+print(f"The LCM is: {lcm}")
+
+OUTPUT:
+4
+6
+The LCM is: 12
+
+
