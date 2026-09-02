@@ -1,0 +1,22 @@
+NESTED LOOP:
+for i in range(4):
+    for j in range(i+1):
+        print("*",end=" ")
+    print()
+
+OUTPUT:
+* 
+* * 
+* * * 
+* * * * 
+
+PRINTING STARTS IN REVERSE:
+for i in range(4):
+    for j in range(4-i):
+        print("*",end=" ")
+    print()
+OUTPUT:
+* * * * 
+* * * 
+* * 
+* 
