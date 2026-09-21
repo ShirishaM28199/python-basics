@@ -1,0 +1,7 @@
+How many values have at least one greater value in the array?
+arr=[2,3,1,4,5,6,7,9,9]
+max=max(arr)
+c_max=arr.count(max)
+ans=len(arr)-c_max
+print(ans)
+OUTPUT:7
